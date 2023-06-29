@@ -39,10 +39,14 @@ public:
 		Node * currentNode = NULL;
 		search(element, parent, currentNode); //locate the node which will be the parent of the node to be inserted
 		
-		if(parent == NULL //if the parent is NULL (tree is empty))
+		if(parent == NULL) //if the parent is NULL (tree is empty)
 			{
 				ROOT == newNode; //mark the node as ROOT
 				return; //exit
 			}
+		if (element < parent->info) // if the value in the data field of the new node is less than that of the parent
+		{
+			parent->leftchild = newNode; //make the left child of the parent point to the new node
+		}
 	}
 };
