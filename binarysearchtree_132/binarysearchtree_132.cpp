@@ -55,4 +55,7 @@ public:
 	}
 
 	void search(string element, Node*& parent, Node*& currentNOde)
+	{
+
+	}
 };
