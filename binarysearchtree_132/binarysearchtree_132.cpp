@@ -118,5 +118,6 @@ public:
 
 int main()
 {
-
+	BinaryTree obj;
+	while (true)
 }
